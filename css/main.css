@@ -26,7 +26,13 @@
         padding: 5px 5px;
     }
 
-    .greeting, .greeting p, .circles {
+    .greeting, .greeting p, .circles{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .response, .response p {
         opacity: 0;
         width: 0;
         height: 0;
@@ -93,7 +99,7 @@
     }
 
     .feed .message.multi-line {
-        width: 75%;
+        width: 70%;
         padding: 10px 10px 10px 10px;
     }
 
@@ -138,33 +144,41 @@
         border-radius: 50px;
     }
 
-    .circle-one {
-    
-    }
-
-    .circle-two {
-
-    }
-
-    .circle-three {
-
-    }
-
     .circle-right-margin {
         margin-right: 5px;
     }
 
     .feed button {
+        font-size: 10px;
         color: #ffffff;
         background-color: #537578;
         outline:none;
         border: none;
         width: 100%;
         margin-top: 5px;
-        padding-top: 5px;
-        border-radius: 5px 5px 0 0; 
-        -moz-border-radius: 5px 5px 0 0; 
-        -webkit-border-radius: 5px 5px 0 0; 
+        padding-top: 2px;
+    }
+
+    .allCornersRounded {
+        border-radius: 10px 10px 10px 10px ; 
+        -moz-border-radius: 10px 10px 10px 10px ; 
+        -webkit-border-radius: 10px 10px 10px 10px ;  
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease; 
+    }
+
+    .topCornersRounded {
+        border-radius: 10px 10px 0 0; 
+        -moz-border-radius: 10px 10px 0 0; 
+        -webkit-border-radius: 10px 10px 0 0;   
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
     }
 
     .feed button:hover {
@@ -172,13 +186,34 @@
     }
 
     .menu {
-        min-height: 85px;
+        opacity: 0;
+        height: 0;
         text-align: left;
         padding: 5px 10px 0 5px;
         background-color: #aad4d8;
         border-radius: 0px 0px 15px 15px; 
         -moz-border-radius: 0px 0px 15px 15px; 
         -webkit-border-radius: 0px 0px 15px 15px; 
+    }
+
+    .showMenu {
+        opacity: 1;
+        height: 95px;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    .hideMenu {
+        opacity: 0;
+        height: 0;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
     }
 
     ul {
@@ -190,9 +225,19 @@
         color: #ffffff;
     }
 
+    .display-none {
+        display: none;
+    }
+
     li {
+        height: 0;
         color: #ffffff;
-        height: 20px;
+
+        /*padding-bottom: 5px;*/
+    }
+
+    .li-height {
+        height: 35px;
     }
 
  /*==========  Mobile First Method  ==========*/

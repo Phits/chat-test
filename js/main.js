@@ -3,6 +3,7 @@
 
 	// declare actors here
     var $transOne = 250,
+        $transTwo = 500,
         $delayOne = 200,
         $delayTwo = 300,
         $delayThree = 500,
@@ -20,7 +21,13 @@
         $circle = $('.circle'),
         $circleOne = $('.circle-one'),
         $circleTwo = $('.circle-two'),
-        $circleThree = $('.circle-three')
+        $circleThree = $('.circle-three'),
+        $response = $('.response'),
+        $responseP = $('.response p'),
+        $menu = $('.menu'),
+        $button = $('button'),
+        $anchor = $('a'),
+        $listItem = $('li') 
         ;
 
 	// clear stage 
@@ -36,7 +43,7 @@
 
     	$headerImg.delay($delayOne).animate({
 		  	"opacity": "1"
-		  }, $transOne);
+		 }, $transOne);
     }
 
     function messageOne() {
@@ -97,19 +104,27 @@
             nIntervId = setInterval(circlesLoop, 250);
 		});
 
-		$circles.delay(3000).animate({
+		$circles.delay(2500).animate({
 		  	"opacity": "0"
 		}, $transOne, function() {
 			clearInterval(nIntervId);
 		});
 
+		$response.delay(2500).animate({
+		  	"opacity": "1",
+		  	"width": "70%",
+		  	"height": "100%"
+		}, $transTwo);
 
-
+		$responseP.delay(2500).animate({
+		  	"opacity": "1",
+		  	"width": "100%",
+		  	"height": "100%"
+		}, $transTwo);
 
     }
 
     function circlesLoop() {
-
 		    $circleOne.delay(250).animate({
 			  	"opacity": "0.5"
 			}, $transOne, function() {
@@ -130,15 +145,33 @@
 					}, $transOne, function() {
 						$circleThree.animate({
 						  	"opacity": "1"
-						}, $transOne);
+						}, $transOne, function() {
+							$circles.hide();
+						});
 					});
 
 				});
 			});	
-
     }
  
 
+    $button.click(function() {
+
+    	$button.toggleClass( "topCornersRounded");
+    	$button .toggleClass( "allCornersRounded" );
+
+    	$menu.toggleClass( "showMenu");
+    	$menu.toggleClass( "hideMenu" );
+
+        $anchor.toggleClass( "display-none");
+
+        $listItem.toggleClass( "li-height");
+
+    	$button .text(function(i, text){
+          return text === "View Associated Research" ? "Hide Associated Research" : "View Associated Research";
+        })
+
+	});
 	
 	// the GO function ...to kick things all off
 	function go() {
