@@ -1,4 +1,5 @@
      body {
+        font-size: 12px;
         background-color: #d6e1e2;
      }
 
@@ -8,6 +9,7 @@
         margin: 0 auto 0 auto; 
         text-align: center; 
         background-color: #def2f4;
+        overflow: scroll;
         border-radius: 0px 0px 5px 5px; 
         -moz-border-radius: 0px 0px 5px 5px; 
         -webkit-border-radius: 0px 0px 5px 5px; 
@@ -18,7 +20,7 @@
 
     .chat-window header {
         background-color: #ffffff;
-        border-bottom: solid #777777 1px;
+        border-bottom: solid #d1d1d1 1px;
 /*        -webkit-box-shadow: 0 1px 5px 0px rgba(0,0,0,0.26);
         -moz-box-shadow: 0 1px 5px 0px rgba(0,0,0,0.26);*/
     }
@@ -44,25 +46,101 @@
         box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.26);
     }
 
+    .message-wrapper {
+        clear: both;
+    }
+
     .feed .message {
         position: relative;
         float: left;
-        width: auto;
         background-color: #ffffff;
         min-height: 41px;
         margin: 5px 5px;
-        padding: 12px 10px 0 10px;
+/*        padding: 14px 10px 0 10px;*/
         border-radius: 5px; 
-        -moz-border-radius: 5px; 
-        -webkit-border-radius: 5px;
+        -moz-border-radius: 20px; 
+        -webkit-border-radius: 20px;
         -webkit-box-shadow: 0 1px 5px 0px rgba(0,0,0,0.26);
         -moz-box-shadow: 0 1px 5px 0px rgba(0,0,0,0.26);
         box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.26);
     }
 
+    .feed .message.single-line {
+        padding: 14px 10px 0 10px;
+    }
+
+    .feed .message.multi-line {
+        width: 75%;
+        padding: 10px 10px 10px 10px;
+    }
+
     .feed .message p {
+        text-align: left;
         margin: 0 0;
         padding: 0 0;
+        background-color: transparent;
+    }
+
+   .feed .message.question {
+        float: right;
+        background-color: #00a1b0;
+        color: #ffffff;
+    }
+
+    .circle {
+        float: left;
+        width: 10px;
+        height: 10px;
+        background: #00a1b0;
+        margin-top: 2px;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+    }
+
+    .circle-right-margin {
+        margin-right: 5px;
+    }
+
+    .feed button {
+        color: #ffffff;
+        background-color: #537578;
+        outline:none;
+        border: none;
+        width: 100%;
+        margin-top: 5px;
+        padding-top: 5px;
+        border-radius: 5px 5px 0 0; 
+        -moz-border-radius: 5px 5px 0 0; 
+        -webkit-border-radius: 5px 5px 0 0; 
+    }
+
+    .feed button:hover {
+        box-shadow: 0 0 7px #00a1b0;
+    }
+
+    .menu {
+        min-height: 85px;
+        text-align: left;
+        padding: 5px 10px 0 5px;
+        background-color: #aad4d8;
+        border-radius: 0px 0px 15px 15px; 
+        -moz-border-radius: 0px 0px 15px 15px; 
+        -webkit-border-radius: 0px 0px 15px 15px; 
+    }
+
+    ul {
+        margin: 0 0 0 10px;
+        padding: 0 0 0 10px;
+    }
+
+    .menu a {
+        color: #ffffff;
+    }
+
+    li {
+        color: #ffffff;
+        height: 20px;
     }
 
  /*==========  Mobile First Method  ==========*/
