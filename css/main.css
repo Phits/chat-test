@@ -17,7 +17,7 @@
         -moz-box-shadow: 0 1px 5px 0px rgba(0,0,0,0.26);*/
     }
 
-    .icon-one {
+    .icon-one, .icon-two {
         float: left;
         opacity: 0;
         height: 0;
@@ -26,7 +26,7 @@
         padding: 5px 5px;
     }
 
-    .greeting, .greeting p {
+    .greeting, .greeting p, .circles {
         opacity: 0;
         width: 0;
         height: 0;
@@ -105,6 +105,7 @@
     }
 
     input {
+        color: #ffffff;
         width: 100%;
         text-align: left;
         margin: -5px 0 0 0;
@@ -114,17 +115,19 @@
     }
 
     textarea, input, button { 
-        utline: none; 
+        outline: none; 
     }
 
    .feed .message.question {
-        width: 95%;
+        opacity: 0;
+        width: 0%;
         padding-left: 15px;
         background-color: #00a1b0;
         color: #ffffff;
     }
 
     .circle {
+        opacity: 0;
         float: left;
         width: 10px;
         height: 10px;
@@ -133,6 +136,18 @@
         -moz-border-radius: 50px;
         -webkit-border-radius: 50px;
         border-radius: 50px;
+    }
+
+    .circle-one {
+    
+    }
+
+    .circle-two {
+
+    }
+
+    .circle-three {
+
     }
 
     .circle-right-margin {
