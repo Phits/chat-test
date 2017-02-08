@@ -61,7 +61,8 @@
 
 		$greetingP.delay($delayFour).animate({
 		  	"opacity": "1",
-		  	"width": "150px"
+		  	"width": "150px",
+		  	"font-size" : "12px"
 		}, $transOne);
 
     }
