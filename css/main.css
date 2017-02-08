@@ -1,0 +1,118 @@
+     body {
+        background-color: #d6e1e2;
+     }
+
+     .chat-window {
+        width: 260px;
+        height: 335px;
+        margin: 0 auto 0 auto; 
+        text-align: center; 
+        background-color: #def2f4;
+        border-radius: 0px 0px 5px 5px; 
+        -moz-border-radius: 0px 0px 5px 5px; 
+        -webkit-border-radius: 0px 0px 5px 5px; 
+        -webkit-box-shadow: 0 2px 5px 0px rgba(0,0,0,0.26);
+        -moz-box-shadow: 0 2px 5px 0px rgba(0,0,0,0.26);
+        box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.26);
+    }
+
+    .chat-window header {
+        background-color: #ffffff;
+        border-bottom: solid #777777 1px;
+/*        -webkit-box-shadow: 0 1px 5px 0px rgba(0,0,0,0.26);
+        -moz-box-shadow: 0 1px 5px 0px rgba(0,0,0,0.26);*/
+    }
+
+    .chat-window header img {
+        height: 12px;
+        width: 47px;
+        margin: 5px auto 5px auto; 
+    }
+
+    .feed .icon img {
+        display: inline-block;
+        position: relative;
+        float: left;
+        background-color: #ffffff;
+        margin: 5px 5px;
+        padding: 5px 5px;
+        border-radius: 5px; 
+        -moz-border-radius: 5px; 
+        -webkit-border-radius: 5px;
+        -webkit-box-shadow: 0 1px 5px 0px rgba(0,0,0,0.26);
+        -moz-box-shadow: 0 1px 5px 0px rgba(0,0,0,0.26);
+        box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.26);
+    }
+
+    .feed .message {
+        position: relative;
+        float: left;
+        width: auto;
+        background-color: #ffffff;
+        min-height: 41px;
+        margin: 5px 5px;
+        padding: 12px 10px 0 10px;
+        border-radius: 5px; 
+        -moz-border-radius: 5px; 
+        -webkit-border-radius: 5px;
+        -webkit-box-shadow: 0 1px 5px 0px rgba(0,0,0,0.26);
+        -moz-box-shadow: 0 1px 5px 0px rgba(0,0,0,0.26);
+        box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.26);
+    }
+
+    .feed .message p {
+        margin: 0 0;
+        padding: 0 0;
+    }
+
+ /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+
+/*        body {
+            border: solid orange 1px;
+        }*/
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+
+/*        body {
+            border: solid blue 1px;
+        }*/
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+
+/*        body {
+            border: solid green 1px;
+        }*/
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+/*        body {
+            border: solid yellow 1px;
+        }*/
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+        /*body {
+            border: solid red 1px;
+        }*/
+        
+        .chat-window {
+            width: 260px;
+            height: 335px;
+        }
+
+    }
