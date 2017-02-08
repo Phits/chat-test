@@ -4,18 +4,10 @@
      }
 
      .chat-window {
-        width: 260px;
-        height: 335px;
+        /*width: 260px;
+        height: 335px;*/
         margin: 0 auto 0 auto; 
         text-align: center; 
-        background-color: #def2f4;
-        overflow: scroll;
-        border-radius: 0px 0px 5px 5px; 
-        -moz-border-radius: 0px 0px 5px 5px; 
-        -webkit-border-radius: 0px 0px 5px 5px; 
-        -webkit-box-shadow: 0 2px 5px 0px rgba(0,0,0,0.26);
-        -moz-box-shadow: 0 2px 5px 0px rgba(0,0,0,0.26);
-        box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.26);
     }
 
     .chat-window header {
@@ -25,10 +17,41 @@
         -moz-box-shadow: 0 1px 5px 0px rgba(0,0,0,0.26);*/
     }
 
+    .icon-one {
+        float: left;
+        opacity: 0;
+        height: 0;
+        width: 0;
+        margin-right: 10px;
+        padding: 5px 5px;
+    }
+
+    .greeting, .greeting p {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
     .chat-window header img {
+        opacity: 0;
         height: 12px;
         width: 47px;
         margin: 5px auto 5px auto; 
+    }
+
+    .trans-wrap {
+        position: absolute;
+        top: -340px;
+        width: 260px;
+        height: 335px;
+        background-color: #def2f4;
+        overflow: scroll;
+        border-radius: 0px 0px 5px 5px; 
+        -moz-border-radius: 0px 0px 5px 5px; 
+        -webkit-border-radius: 0px 0px 5px 5px; 
+        -webkit-box-shadow: 0 2px 5px 0px rgba(0,0,0,0.26);
+        -moz-box-shadow: 0 2px 5px 0px rgba(0,0,0,0.26);
+        box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.26);
     }
 
     .feed .icon img {
