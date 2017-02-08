@@ -1,5 +1,5 @@
      body {
-        font-size: 12px;
+        font-size: 0;
         background-color: #d6e1e2;
      }
 
@@ -95,6 +95,7 @@
     }
 
     .feed .message.single-line {
+        font-size: 12px;
         padding: 14px 10px 0 10px;
     }
 
@@ -197,6 +198,7 @@
     }
 
     .showMenu {
+        font-size: 12px;
         opacity: 1;
         height: 65px;
         transition: all 0.5s ease;
@@ -207,6 +209,7 @@
     }
 
     .hideMenu {
+        font-size: 0
         opacity: 0;
         height: 0;
         transition: all 0.5s ease;

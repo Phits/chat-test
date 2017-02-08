@@ -119,7 +119,8 @@
 		$responseP.delay(2500).animate({
 		  	"opacity": "1",
 		  	"width": "100%",
-		  	"height": "100%"
+		  	"height": "100%",
+		  	"font-size": "12px"
 		}, $transTwo);
 
     }
