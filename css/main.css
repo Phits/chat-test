@@ -4,8 +4,8 @@
      }
 
      .chat-window {
-        /*width: 260px;
-        height: 335px;*/
+        width: 260px;
+        /*height: 335px;*/
         margin: 0 auto 0 auto; 
         text-align: center; 
     }
@@ -49,7 +49,7 @@
         position: absolute;
         top: -340px;
         width: 260px;
-        height: 335px;
+        /*height: 335px;*/
         background-color: #def2f4;
         overflow: scroll;
         border-radius: 0px 0px 5px 5px; 
@@ -282,13 +282,8 @@
     /* Large Devices, Wide Screens */
     @media only screen and (min-width : 1200px) {
 
-        /*body {
+/*        body {
             border: solid red 1px;
         }*/
-        
-        .chat-window {
-            width: 260px;
-            height: 335px;
-        }
 
     }

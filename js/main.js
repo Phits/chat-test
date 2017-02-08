@@ -104,7 +104,7 @@
             nIntervId = setInterval(circlesLoop, 250);
 		});
 
-		$circles.delay(2500).animate({
+		$circles.delay(3000).animate({
 		  	"opacity": "0"
 		}, $transOne, function() {
 			clearInterval(nIntervId);
